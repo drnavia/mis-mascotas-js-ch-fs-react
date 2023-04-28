@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Mascotas | Proyecto NAVIA</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="icon" href="img/favicon.png" />
+</head>
+
+<body>
+
+    <header id="main-header">
+        <a id="logo-header" href="index.html">
+            <span class="site-name">Mis Mascotas</span>
+            <span class="site-desc">Delivery online especializado en productos para perros y gatos</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html#">Inicio</a></li>
+                <li><a class="link-productos" href="productos.html#">Productos</a></li>
+                <li id="ver-carrito">
+                    <a href="carrito.html">Carrito
+                        <span id="cantidad-prods-carrito" class="badge rounded-pill bg-danger">
+                            <span class="cantidad">4</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="main-content">
+
+        <div class="div-content">
+            <h2>Catálogo de Productos</h2>
+        </div>
+
+        <!-- Contenedor de Buscador -->
+        <div class="div-buscador">    
+            <div class="d-flex row">
+                <form id="formulario-buscador" action="">
+                    <input type="text" id="buscador" class="form-control buscador" placeholder="Buscar producto" aria-describedby="button-addon2">
+                </form> 
+            </div>
+        </div>
+        
+
+        <div class="div-content"></div>
+            <div class="justify-content-center marcas">
+                <ul id="marcas-filtrar">
+                    <li class="filtrado-boton">
+                        <a href="" class="boton-filtrar" id="all">Todas las marcas</a>
+                    </li>
+                    <li>
+                        <a href="" class="boton-filtrar" id="OLD PRINCE">OLD PRINCE</a>
+                    </li>
+                    <li>
+                        <a href="" class="boton-filtrar" id="PRO PLAN">PRO PLAN</a>
+                    </li>
+                    <li>
+                        <a href="" class="boton-filtrar" id="PURINA EXCELLENT">PURINA EXCELLENT</a>
+                    </li>
+                    <li>
+                        <a href="" class="boton-filtrar" id="ROYAL CANIN">ROYAL CANIN</a>
+                    </li>
+                    <li>
+                        <a href="" class="boton-filtrar" id="VITAL CAN">VITAL CAN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="div-productos cards" id="catalogo-productos"></div>
+    </section>
+
+
+    <footer id="main-footer">
+        <p class="credit">&copy; Copyright @ 2021 by <span>{<span>Katto.<span>Dev</span></span>}</span></p>
+    </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Archivos JS Personalizaods (+ jQuery) -->
+    <script src="js/productos-page.js"></script>
+    <script src="js/productos-comprar.js"></script>
+</body>
+
+</html>
